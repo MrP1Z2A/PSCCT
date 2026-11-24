@@ -4,7 +4,7 @@ A responsive prototype website for **SpeakSafe**, our CA2 solution for *Problem 
 
 **Problem statement:** How can we safeguard employees in Singapore against workplace bullying and the misuse of authority?
 
-SpeakSafe is an independent, anonymous reporting system. Reports go to a neutral third party instead of the employee's boss or HR. There are fixed triage rules (48-hour urgent investigations, an audit after 3+ reports on one supervisor) and a 90-day anti-retaliation watch.
+SpeakSafe is an independent, anonymous reporting system. Reports go to a neutral third party instead of the employee's boss or HR. There are fixed triage rules (48-hour urgent investigations, an audit after 3+ reports on one supervisor) and anti-retaliation protection with no time limit.
 
 ## What's on the site
 
