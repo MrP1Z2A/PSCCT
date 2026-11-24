@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpeakSafe | Independent Anonymous Workplace Reporting</title>
+  <meta name="description" content="SpeakSafe: a student prototype of an independent, anonymous reporting system that protects employees in Singapore from workplace bullying and abuse of power.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="proto-banner" role="note">
+    Student prototype for CA2 (PSCCT). This is a demonstration only: nothing you type is sent or stored on a server.
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="logo" aria-label="SpeakSafe home">
+        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-text">SpeakSafe</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#problem">The problem</a>
+        <a href="#solution">Our solution</a>
+        <a href="#how">How it works</a>
+        <a href="#report">Make a report</a>
+        <a href="#track">Track a case</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">For employees in Singapore</p>
+          <h1>Speak up.<br><span class="accent">Stay safe.</span></h1>
+          <p class="hero-lead">SpeakSafe is an independent, anonymous reporting system for workplace bullying and abuse of power. Reports go to a neutral third party, never your boss or internal HR.</p>
+          <div class="hero-actions">
+            <a href="#report" class="btn btn-primary">Make a report</a>
+            <a href="#track" class="btn btn-ghost">Track my case</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="SpeakSafe promises">
+          <div class="promise"><span class="promise-num">48 h</span><span class="promise-txt">Urgent cases investigated</span></div>
+          <div class="promise"><span class="promise-num">0</span><span class="promise-txt">Names, staff IDs or IP addresses stored</span></div>
+          <div class="promise"><span class="promise-num">90 days</span><span class="promise-txt">Protection after every outcome</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section id="problem" class="section">
+      <div class="wrap">
+        <p class="eyebrow">The problem</p>
+        <h2>Most victims stay silent, because the person they would report to controls their job</h2>
+        <div class="stats">
+          <article class="stat">
+            <p class="stat-num">3 in 10</p>
+            <p class="stat-txt">workers who were sexually harassed at work made an official report.</p>
+            <p class="stat-src">AWARE–Ipsos, 2021</p>
+          </article>
+          <article class="stat">
+            <p class="stat-num">24%</p>
+            <p class="stat-txt">of Singapore employees said they were bullied at work in the past year, against a 15% average across 14 countries.</p>
+            <p class="stat-src">Kantar Inclusion Index, 2019</p>
+          </article>
+          <article class="stat">
+            <p class="stat-num">2,168</p>
+            <p class="stat-txt">wrongful dismissal claims in 2025, up from 1,720 in 2024.</p>
+            <p class="stat-src">MOM &amp; TADM, 2026</p>
+          </article>
+        </div>
+        <p class="note-strip"><strong>The legal gap:</strong> the Workplace Fairness Act covers discrimination, not general bullying, and only takes effect at the end of 2027. SpeakSafe covers bullying of any kind, starting now.</p>
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section id="solution" class="section section-alt">
+      <div class="wrap">
+        <p class="eyebrow">Our solution</p>
+        <h2>One system, seven parts</h2>
+        <p class="section-lead">SpeakSafe combines our ideas from brainstorming, SCAMPER and computational thinking into one system that prevents abuse, handles reports fairly and protects the people who speak up.</p>
+        <div class="parts">
+          <article class="part"><span class="part-num">01</span><h3>Two safe channels</h3><p>An encrypted online portal, plus camera-free drop-boxes for frontline and shift workers. Forms in English, Chinese, Malay and Tamil.</p></article>
+          <article class="part"><span class="part-num">02</span><h3>Anonymous by default</h3><p>No names, staff IDs or IP addresses. A Case Reference Code lets you track your case and add evidence later.</p></article>
+          <article class="part"><span class="part-num">03</span><h3>Independent third party</h3><p>Reports go to an external investigator, never your line manager or internal HR.</p></article>
+          <article class="part"><span class="part-num">04</span><h3>Fixed triage rules</h3><p>Urgent cases are investigated within 48 hours. Three or more reports on one supervisor in 12 months trigger an audit.</p></article>
+          <article class="part"><span class="part-num">05</span><h3>Zero-tolerance penalties</h3><p>Set penalties for proven abuse. Cases about top management go to the board, so no one decides their own penalty.</p></article>
+          <article class="part"><span class="part-num">06</span><h3>90-day protection</h3><p>Your team is watched for sudden dismissals, pay cuts or transfers after every outcome.</p></article>
+          <article class="part"><span class="part-num">07</span><h3>Prevention training</h3><p>Every manager completes yearly anti-bullying training.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2>Every report follows the same eight steps</h2>
+        <ol class="steps">
+          <li class="step"><span class="step-num">1</span><div><h3>Submit</h3><p>Report through the online portal or a camera-free drop-box.</p></div></li>
+          <li class="step"><span class="step-num">2</span><div><h3>Anonymise</h3><p>All identifiers are removed and you get a Case Reference Code.</p></div></li>
+          <li class="step"><span class="step-num">3</span><div><h3>Triage</h3><p>Tagged as Physical Safety, Psychological Bullying or Authority Abuse.</p><p class="decision">Enough detail? No → we ask through your code. Urgent? Yes → investigation within 48 hours.</p></div></li>
+          <li class="step"><span class="step-num">4</span><div><h3>Acknowledge</h3><p>We confirm we received your report and share support options.</p></div></li>
+          <li class="step"><span class="step-num">5</span><div><h3>Log &amp; check for a pattern</h3><p>Anonymised details are stored.</p><p class="decision">3+ reports on one supervisor in 12 months? Yes → formal audit.</p></div></li>
+          <li class="step"><span class="step-num">6</span><div><h3>Investigate</h3><p>An independent third party gathers evidence. Your name is never revealed.</p><p class="decision">Proven? No → case closed, record kept.</p></div></li>
+          <li class="step"><span class="step-num">7</span><div><h3>Penalise</h3><p>Warning, coaching, reassignment or termination, matched to severity.</p><p class="decision">Top management? Yes → escalated to the board or TAFEP.</p></div></li>
+          <li class="step"><span class="step-num">8</span><div><h3>Protect</h3><p>You are told the outcome, and your team is watched for 90 days.</p><p class="decision">Retaliation? Yes → new urgent case.</p></div></li>
+        </ol>
+        <figure class="flowchart">
+          <img src="assets/flowchart.png" alt="Flowchart of the SpeakSafe process, from incident to case closed, showing the six yes or no decisions" loading="lazy">
+          <figcaption>The full SpeakSafe flowchart. On a phone, scroll sideways or tap to open it full size.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- REPORT -->
+    <section id="report" class="section section-alt">
+      <div class="wrap narrow">
+        <p class="eyebrow">Make a report (demo)</p>
+        <h2>Tell us what happened</h2>
+        <p class="section-lead">Do not include your name or anyone's real details in this demo. In an emergency, call 999.</p>
+
+        <form id="report-form" class="card form" novalidate>
+          <fieldset>
+            <legend>What kind of problem is it?</legend>
+            <label class="choice"><input type="radio" name="category" value="Physical Safety" required> <span><strong>Physical safety</strong><small>Unwanted contact, threats, sabotage, unsafe work</small></span></label>
+            <label class="choice"><input type="radio" name="category" value="Psychological Bullying"> <span><strong>Psychological bullying</strong><small>Shouting, humiliation, exclusion, micromanagement</small></span></label>
+            <label class="choice"><input type="radio" name="category" value="Authority Abuse"> <span><strong>Abuse of authority</strong><small>Dismissal threats, biased appraisals, pay cuts, unfair rosters</small></span></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Does any of these apply?</legend>
+            <label class="check"><input type="checkbox" name="urgent" value="violence"> Violence or threats of violence</label>
+            <label class="check"><input type="checkbox" name="urgent" value="sexual"> Sexual harassment</label>
+            <label class="check"><input type="checkbox" name="urgent" value="dismissal"> I have been threatened with dismissal</label>
+          </fieldset>
+
+          <div class="field-row">
+            <label class="field">Department (optional)
+              <input type="text" name="dept" maxlength="60" placeholder="e.g. Operations">
+            </label>
+            <label class="field">Form language
+              <select name="lang">
+                <option>English</option><option>中文 (Chinese)</option><option>Bahasa Melayu</option><option>தமிழ் (Tamil)</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="field">What happened?
+            <textarea name="details" rows="5" maxlength="1500" placeholder="Describe what happened, when, and whether anyone saw it. Leave out names." required></textarea>
+          </label>
+
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button type="submit" class="btn btn-primary btn-full">Submit anonymously</button>
+        </form>
+
+        <div id="report-result" class="card result" hidden tabindex="-1" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- TRACK -->
+    <section id="track" class="section">
+      <div class="wrap narrow">
+        <p class="eyebrow">Track a case (demo)</p>
+        <h2>Check your case with your code</h2>
+        <form id="track-form" class="card form track-form">
+          <label class="field">Case Reference Code
+            <input type="text" name="code" placeholder="SS-XXXX-XXXX" autocomplete="off" required>
+          </label>
+          <button type="submit" class="btn btn-primary">Check status</button>
+        </form>
+        <div id="track-result" class="card result" hidden aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt">
+      <div class="wrap narrow">
+        <p class="eyebrow">Questions</p>
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <details><summary>Will my boss find out I reported?</summary><p>No. Reports go to an independent third party, not your manager or HR. We store no names, staff IDs or IP addresses, and drop-box forms use tick-boxes so handwriting can't identify you.</p></details>
+          <details><summary>How can you investigate if you don't know who I am?</summary><p>The investigator talks to you through your Case Reference Code, and interviews witnesses and checks records without saying who reported.</p></details>
+          <details><summary>What if someone files false reports?</summary><p>One report alone never leads to a penalty. Misconduct must be proven by an independent investigation. Three reports about one supervisor only start a review.</p></details>
+          <details><summary>What if the person is in top management?</summary><p>The third party escalates the case to the board of directors (and TAFEP if needed), so no one decides their own penalty.</p></details>
+          <details><summary>What if I am punished after reporting?</summary><p>Your whole team is watched for 90 days. Any dismissal, pay cut, transfer or poor appraisal needs a documented reason. Signs of retaliation open a new urgent case.</p></details>
+          <details><summary>I don't use a computer at work. Can I still report?</summary><p>Yes. Camera-free drop-boxes are placed in private spots and emptied twice a week. Each box has a hotline and QR code for urgent cases.</p></details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-logo">SpeakSafe</p>
+        <p>A student prototype for CA2: Problem Solving with Creative &amp; Computational Thinking (Singapore Polytechnic, DMRO/1B/02, Group 4).</p>
+        <p>Need help now? Contact <a href="https://www.tal.sg/tafep/employment-practices/workplace-harassment/seek-help-on-workplace-harassment" target="_blank" rel="noopener">TAFEP</a>, or call 999 in an emergency.</p>
+      </div>
+      <div>
+        <p class="footer-head">Sources</p>
+        <ul class="sources">
+          <li><a href="https://www.ipsos.com/en-sg/aware-ipsos-survey-reveals-high-prevalence-workplace-sexual-harassment-singapore" target="_blank" rel="noopener">AWARE–Ipsos (2021)</a></li>
+          <li><a href="https://mothership.sg/2019/09/workplace-bullying-survey-2019" target="_blank" rel="noopener">Kantar Inclusion Index (2019)</a></li>
+          <li><a href="https://www.mom.gov.sg/newsroom/press-releases/2026/0724-employment-standards-report-pr" target="_blank" rel="noopener">MOM Employment Standards Report 2025</a></li>
+          <li><a href="https://www.hsfkramer.com/fr/notes/employment/2025-posts/singapore-workplace-fairness-act-to-take-effect-end-of-2027" target="_blank" rel="noopener">Workplace Fairness Act (2025)</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
