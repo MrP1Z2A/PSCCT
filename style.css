@@ -203,6 +203,8 @@ small { color: var(--soft); }
 .choice input { margin-top: 4px; accent-color: var(--sage); width: 18px; height: 18px; flex: none; }
 .choice strong { display: block; font-weight: 600; }
 .choice small { font-size: 14px; }
+.other-field { margin: 4px 0 0; }
+.other-field[hidden] { display: none; }
 .check { display: flex; gap: 12px; align-items: center; padding: 8px 0; cursor: pointer; }
 .check input { width: 20px; height: 20px; accent-color: var(--sage); flex: none; }
 

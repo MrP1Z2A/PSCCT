@@ -65,19 +65,33 @@
   var errorBox = document.getElementById('form-error');
   var result = document.getElementById('report-result');
 
+  // Show the "Something else" box only when that option is chosen
+  var otherField = document.getElementById('other-field');
+  var otherInput = otherField.querySelector('input');
+  form.addEventListener('change', function (e) {
+    if (e.target.name !== 'category') return;
+    var isOther = e.target.value === 'Other';
+    otherField.hidden = !isOther;
+    if (isOther) otherInput.focus(); else otherInput.value = '';
+  });
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var data = new FormData(form);
     var category = data.get('category');
     var details = (data.get('details') || '').trim();
+    var otherType = (data.get('otherType') || '').trim();
 
-    if (!category || details.length < 10) {
-      errorBox.textContent = !category
-        ? 'Please choose what kind of problem it is.'
-        : 'Please describe what happened (at least a sentence).';
+    var problem = !category ? 'Please choose what kind of problem it is.'
+      : (category === 'Other' && !otherType) ? 'Please tell us briefly what kind of problem it is.'
+      : details.length < 10 ? 'Please describe what happened (at least a sentence).'
+      : '';
+    if (problem) {
+      errorBox.textContent = problem;
       errorBox.hidden = false;
       return;
     }
+    if (category === 'Other') category = 'Other: ' + otherType;
     errorBox.hidden = true;
 
     var urgentFlags = data.getAll('urgent');
@@ -103,6 +117,7 @@
 
     result.hidden = false;
     form.reset();
+    otherField.hidden = true;
     result.focus();
     result.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
