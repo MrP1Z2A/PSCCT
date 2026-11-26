@@ -140,8 +140,8 @@
     'Triage by the independent third party',
     'Investigation',
     'Outcome decided',
-    'Case closed',
-    'Ongoing protection (no time limit)'
+    '90-day anti-retaliation watch',
+    'Case closed'
   ];
 
   trackForm.addEventListener('submit', function (e) {
